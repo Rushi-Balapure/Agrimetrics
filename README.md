@@ -1,17 +1,39 @@
-🌾 Introducing Agrimetics - Your Crop Recommendation ML Model! 🚜
+# AGRIMETRICS 🌿
 
-Are you ready to witness the magic of data-driven farming? 📊✨ Our state-of-the-art crop recommendation model is here to revolutionize the way you cultivate your land! 🌱💡
+A simple ML and DL based website which recommends the best crop to grow, fertilizers to use and the diseases caught by your crops.
 
-Using the power of the random forest algorithm, our intelligent system takes various factors into account to provide you with personalized crop recommendations and suggest the most suitable fertilizer for your specific land conditions. 📈🌱
+# MOTIVATION 💪
 
-Imagine this: You input the levels of nitrogen, potassium, phosphorus, and soil pH, along with the region of your land. 📝 Our Crop Recommendation ML model works its magic and, within seconds, gives you a comprehensive analysis of the best crop options for your land and the ideal fertilizer to maximize your yield. 🌾🌱💪
+* Farming is one of the major sectors that influences a country’s economic growth.
 
-But that's not all! 🌟 Agrimetics goes beyond just data analysis. We understand the importance of user experience and aim to make farming a delightful journey for you. 🌈😊
+* In country like India, majority of the population is dependent on agriculture for their livelihood. Many new technologies, such as Machine Learning and Deep Learning, are being implemented into agriculture so that it is easier for farmers to grow and maximize their yield.
 
-With our user-friendly interface, you can effortlessly navigate through the system, input your data, and receive valuable insights and recommendations in a visually appealing and understandable format. 🖥️🌱📊
+* In this project, I present a website in which the following applications are implemented; Crop recommendation, Fertilizer recommendation and Plant disease prediction, respectively.
 
-Whether you're a seasoned farmer or just starting out, Agrimetics empowers you with knowledge and equips you with the tools to make informed decisions for your crops. 🌾📚💪
+* In the crop recommendation application, the user can provide the soil data from their side and the application will predict which crop should the user grow.
 
-By harnessing the potential of machine learning and advanced agricultural analytics, we bring the future of farming to your fingertips. 🌍🌱🤖
+* For the fertilizer recommendation application, the user can input the soil data and the type of crop they are growing, and the application will predict what the soil lacks or has excess of and will recommend improvements.
 
-So why wait? Join the Agrimetics community today and experience the benefits of cutting-edge technology in agriculture. Together, let's cultivate a greener and more prosperous world! 🌿🌍🌱💚✨
+* For the last application, that is the plant disease prediction application, the user can input an image of a diseased plant leaf, and the application will predict what disease it is and will also give a little background about the disease and suggestions to cure it.
+
+# How to use 💻
+
+* Crop Recommendation system ==> enter the corresponding nutrient values of your soil, state and city. Note that, the N-P-K (Nitrogen-Phosphorous-Pottasium) values to be entered should be the ratio between them. Refer this website for more information. Note: When you enter the city name, make sure to enter mostly common city names. Remote cities/towns may not be available in the Weather API from where humidity, temperature data is fetched.
+
+* Fertilizer suggestion system ==> Enter the nutrient contents of your soil and the crop you want to grow. The algorithm will tell which nutrient the soil has excess of or lacks. Accordingly, it will give suggestions for buying fertilizers.
+
+# How to run locally 🛠️
+
+* Before the following steps make sure you have git, Anaconda or miniconda installed on your system
+
+* Clone the complete project with git clone https://github.com/Rushi-Balapure/Agrimetrics.git or you can just download the code and unzip it
+
+* Once the project is cloned, open anaconda prompt in the directory where the project was cloned and paste the following block
+
+conda create -n harvestify python=3.6.12
+conda activate harvestify
+pip install -r requirements.txt
+
+* And finally run the project with
+ python app.py
+* Open the localhost url provided after running app.py and now you can use the project locally in your web browser.
